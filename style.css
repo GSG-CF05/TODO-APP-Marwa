@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+
+    --image-email: url('image/o.jpg');
+    --bsh-color: #313135;
+    --sidnav-color: rgba(0, 0, 0, 0.644);
+    --list-color: rgb(0, 0, 0);
+    --text-color: #fff; 
+    --hover-color:rgb(255, 255, 255);
+
+
+}
+::placeholder{
+    color: var(--hover-color);
+    opacity: 30%;
+}
+
+
+.light{
+      --image-email: url('image/light.jpg');
+      --bsh-color: #f0f2fada;
+      --sidnav-color: rgba(3, 10, 39, 0.719);
+      --list-color: rgb(3, 10, 39);
+      --text-color:#fff;
+      --hover-color:rgb(0, 0, 0);
+
+}
+
+body{
+    background-image: var(--image-email);
+    background-size: cover;
+    background-attachment: fixed;
+
+   
+
+}
+.topnav{
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--sidnav-color);
+    position: sticky; top: 0;
+
+    
+}
+.topnav .logo{
+    font-family: 'Alfa Slab One', cursive;
+font-family: 'Averia Serif Libre', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-left:30px
+    
+}
+.topnav .search{
+  margin-left: 985px;
+  height: 13px;
+  padding: 6px;
+  border: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 15px;
+  background-color:var(--bsh-color) ;
+  border-radius: 3px;
+  
+}
+.topnav .lightdark{
+    background-color: var(--bsh-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 1300px;
+
+}
+.topnav .fas{
+    color: rgb(238, 209, 80);
+    padding-top: 4px;
+    padding-left: 4px;
+
+
+  
+
+
+}
+.search input {
+    border: none;
+    background: none;
+    color: var(--hover-color);
+    outline: none;
+    
+
+  
+}
+.search span{
+    color: var(--sidnav-color);
+}
+.topnav form{
+ display: block;
+}
+
+  
+.sidenav{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: var(--sidnav-color);
+}
+.sidenav ul{
+    list-style-type: none;
+    padding-top: 3px;
+
+}
+.sidenav ul a{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding :10px 23px;
+    border-bottom: 1px solid var(--bsh-color);
+
+
+}
+.sidenav ul li{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.sidenav ul a:hover{
+    background-color: var(--bsh-color);
+    border-radius: 6px;
+    color: var(--hover-color);
+
+}
+.sidenav ul a:focus{
+    background-color: var(--bsh-color);
+    border-radius: 6px;
+    color: var(--hover-color);
+
+
+}
+.sidenav .title{
+    font-size: 14px;
+    margin-left: 15px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+.sidenav .icon{
+    font-size :18px;
+    vertical-align: middle;
+    
+}
+.listt{
+    margin-left: 267px;
+    margin-top: 40px;
+    height: 425px;
+    overflow: auto;
+    overflow-y: scroll;
+
+
+
+}
+.edit{
+    color:white;
+    background-color:var(--list-color);
+    width: 1000px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 7px;
+    opacity:93%;
+    margin-top:15px;
+    list-style-type:none;
+    font-size:1rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 10px;
+
+}
+.edit i{
+    padding-right: 30px;
+}
+
+.listt input{
+    width: 1000px;
+    height: 50px;
+    border: none;
+    background-color: var(--sidnav-color);
+    font-size: 17px;
+    padding-left: 9px;
+    color:var(--text-color);
+    border-radius: 10px;
+    outline: none;
+    position: -webkit-sticky;
+  position: fixed;
+  bottom: 54px;
+}
+.listt::-webkit-scrollbar {
+    display: none;
+}
+.listt button{
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: var(--sidnav-color);
+    color: var(--hover-color);
+    font-size: 17px;
+    border-radius: 10px;
+    position: fixed;
+    margin-left: 1014px;
+    bottom: 54px;
+
+}
+
+@media screen and (min-width: 280px)  and (max-width:912px){
+    
+   
+    .topnav{
+        width: 800px;
+        height: 90px;
+        margin-bottom: 90px;
+    }
+    .topnav .logo{
+        font-size: 60px;
+        font-weight: bold;
+        margin-left: 300px;
+    }
+    .topnav .search{
+  display: none;
+    }
+    
+  
+    
+    .topnav .lightdark{
+       
+        width: 60px;
+        height: 60px;
+        margin-left: 700px;
+    }
+    .topnav i{
+        font-size: 50px;
+    }
+     
+    .listt{
+        margin-left: 30px;
+        margin-top: 10px;
+        height: 1300px;
+        width: 740px;
+        overflow: auto;
+        overflow-y: scroll;
+    
+    
+    
+    }
+    .listt input{
+        width: 620px;
+        height: 120px;
+        border: none;
+        font-size: 40px;
+      bottom: 80px;
+    }
+   
+    .listt button{
+        height: 120px;
+        width: 100px;
+        border: none;
+        background-color: var(--sidnav-color);
+        color: var(--hover-color);
+        font-size: 30px;
+        border-radius: 10px;
+        position: fixed;
+        margin-left: 639px;
+        bottom: 80px;
+    
+    }
+   
+    .sidenav{
+        
+        top: 0px;
+        left: 0;
+        width: 80px;
+        height: 100px;
+        background: none;
+        
+    }
+    .sidenav ul{
+        list-style-type: none;
+        padding-top: 3px;
+    
+    }
+    .sidenav ul a{
+        display: block;
+        text-decoration: none;
+        color: var(--text-color);
+        padding-left: 1px;
+        padding-bottom: 3px;    
+    
+    }
+   
+    .sidenav .title{
+       display: none;
+    }
+    .sidenav i{
+        font-size :50px;
+        vertical-align: middle;
+        
+    }
+    .edit{
+        width: 720px;
+        height: 90px;
+        padding-left: 10px;
+        border-radius: 7px;
+       
+        margin-top:15px;
+        
+        font-size:3rem;
+        
+        padding-top: 30px;
+    
+    }
+    .edit i{
+        padding-right: 30px;
+        font-size: 3rem;
+        padding-top: 10px;
+    }
+
+    
+}
