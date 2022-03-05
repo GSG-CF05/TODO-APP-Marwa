@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <nav class="topnav">
+        <div class="logo">TODO</div>
+        <div class="search">
+        <input  type="text" placeholder="Search">
+        <span><i class="fa fa-search"></i></span>
+    </div>
+    <div class="lightdark">
+        <i class="fas fa-moon toggle-btn"></i>
+        
+    </div>
+    </nav>
+    <nav class="sidenav">
+
+        <ul>
+            <li><a href="#">
+                <span class="icon"> <i class="fa-solid fa-house"></i></span>
+                <span class="title">Tasks</span>
+            </a> </li>
+         
+        </ul>
+    </nav>
+    <form class="listt">
+        <input class="todo-input" type="text" placeholder="Add your task here">
+       <button class="todo-btn" type="submit"> <i class="fa-solid fa-plus"></i></button>
+       <div>
+        <ul class="todo-list"></ul>
+    </div>
+    </form>
+   
+    <script src="test.js"></script>
+</body>
+</html>
